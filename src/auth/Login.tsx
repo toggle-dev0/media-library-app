@@ -11,7 +11,6 @@ function Login() {
     formState: { errors },
   } = useForm();
   const [email, setEmail] = useState("");
-  const [password, setPassword] = useState("");
   const [sign, setSign] = useState(false);
 
   const { login } = useContext(AuthContext);
@@ -42,7 +41,6 @@ function Login() {
         <input
           type="password"
           {...register("password", { required: "Password is required" })}
-          onChange={(e) => setPassword(e.target.value)}
           id="password"
         />
         {errors.password && (
