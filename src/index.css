@@ -1,0 +1,12 @@
+#root {
+  min-height: 100dvh;
+}
+
+img {
+  max-width: 100%;
+}
+
+button,
+input {
+  font: inherit;
+}
